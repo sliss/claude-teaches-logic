@@ -170,3 +170,153 @@
 .exercises .instructions ol {
   margin-bottom: 0;
 }
+
+/* Lesson content */
+.lesson-content section {
+  margin-bottom: 2.5rem;
+}
+
+.lesson-content h3 {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #bbb;
+}
+
+.lesson-content .definition {
+  background: #1a1a2e;
+  border-left: 3px solid #6fa8dc;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.lesson-content .definition ol,
+.lesson-content .definition ul {
+  margin-bottom: 0;
+}
+
+.lesson-content .note {
+  color: #888;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.lesson-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.lesson-content th,
+.lesson-content td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+.lesson-content th {
+  background: #1a1a2e;
+  color: #aaa;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.lesson-content td code {
+  color: #e8a;
+}
+
+.lesson-content .connectives-table td:first-child {
+  font-size: 1.3rem;
+}
+
+/* Exercises hub */
+.exercises li.available .lesson-title {
+  color: #6fa8dc;
+}
+
+.exercises li.available .exercise-status {
+  color: #6fa8dc;
+}
+
+.exercises li.unavailable .lesson-title {
+  color: #666;
+}
+
+/* Exercise set content */
+.exercises-content {
+  max-width: 800px;
+}
+
+.exercises-content .exercises-intro {
+  color: #999;
+  margin-bottom: 2rem;
+}
+
+.exercise {
+  background: #1a1a2e;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.exercise h3 {
+  margin: 0 0 1rem 0;
+  color: #6fa8dc;
+  font-size: 1rem;
+}
+
+.exercise-question {
+  margin-bottom: 1rem;
+}
+
+.exercise-question ol,
+.exercise-question ul {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+
+.exercise-controls {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.exercise-controls button {
+  background: #2a2a4e;
+  color: #aaa;
+  border: 1px solid #3a3a5e;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.15s;
+}
+
+.exercise-controls button:hover {
+  background: #3a3a5e;
+  color: #fff;
+}
+
+.exercise-hint {
+  background: #252540;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  color: #caa;
+  font-style: italic;
+}
+
+.exercise-solution {
+  background: #1f2f1f;
+  border-left: 3px solid #4a9;
+  padding: 1rem 1.25rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.exercise-solution ol,
+.exercise-solution ul {
+  margin-bottom: 0;
+}

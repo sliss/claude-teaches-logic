@@ -1,4 +1,8 @@
+import { Link } from 'react-router-dom';
 import { syllabus } from '../content/syllabus';
+
+// Track which exercise sets are available
+const availableExercises = new Set(['1-1-syntax']);
 
 export function Exercises() {
   return (
@@ -7,7 +11,7 @@ export function Exercises() {
 
       <p>
         Work through exercises after completing each lesson.
-        Record your attempts—solutions are revealed after you've tried.
+        Try each problem before revealing the solution.
       </p>
 
       <section className="exercise-list">
@@ -15,16 +19,23 @@ export function Exercises() {
           <div key={unit.id} className="unit-exercises">
             <h2>{unit.title}</h2>
             <ul>
-              {unit.lessons.map((lesson) => (
-                <li key={lesson.id} className={`status-${lesson.status}`}>
-                  <span className="lesson-title">{lesson.title}</span>
-                  <span className="exercise-status">
-                    {lesson.status === 'complete' ? '✓ Complete' :
-                     lesson.status === 'in-progress' ? '→ In Progress' :
-                     '○ Not Started'}
-                  </span>
-                </li>
-              ))}
+              {unit.lessons.map((lesson) => {
+                const hasExercises = availableExercises.has(lesson.id);
+                return (
+                  <li key={lesson.id} className={hasExercises ? 'available' : 'unavailable'}>
+                    {hasExercises ? (
+                      <Link to={`/exercises/${lesson.id}`} className="lesson-title">
+                        {lesson.title}
+                      </Link>
+                    ) : (
+                      <span className="lesson-title">{lesson.title}</span>
+                    )}
+                    <span className="exercise-status">
+                      {hasExercises ? '→ Available' : '○ Coming soon'}
+                    </span>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         ))}
@@ -35,8 +46,7 @@ export function Exercises() {
         <ol>
           <li>Complete the lesson material first</li>
           <li>Attempt the exercises on your own</li>
-          <li>Record your attempts (honor system)</li>
-          <li>Review the solutions</li>
+          <li>Click "Show Solution" to check your work</li>
           <li>Note what you learned and any confusion</li>
         </ol>
       </section>

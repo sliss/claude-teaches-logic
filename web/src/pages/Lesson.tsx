@@ -1,12 +1,9 @@
 import { useParams } from 'react-router-dom';
 import { syllabus } from '../content/syllabus';
-
-// Dynamic lesson content imports will go here
-// For now, we'll use a placeholder system
+import { Lesson_1_1_Syntax } from '../content/lessons/Lesson_1_1_Syntax';
 
 const lessonContent: Record<string, React.ComponentType> = {
-  // Lessons will be added here as we create them
-  // '1-1-syntax': Lesson_1_1_Syntax,
+  '1-1-syntax': Lesson_1_1_Syntax,
 };
 
 export function Lesson() {
