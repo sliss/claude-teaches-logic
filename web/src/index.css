@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #e0e0e0;
+  background-color: #0f0f1a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+a {
+  color: #6fa8dc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9fc5e8;
+}
+
+code {
+  font-family: 'Fira Code', 'Consolas', monospace;
+  background: #1a1a2e;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* KaTeX overrides for dark mode */
+.katex {
+  font-size: 1.1em;
+}
+
+.katex .mord,
+.katex .mrel,
+.katex .mbin,
+.katex .mop,
+.katex .mpunct,
+.katex .mopen,
+.katex .mclose {
+  color: #e0e0e0;
+}

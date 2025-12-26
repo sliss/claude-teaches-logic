@@ -1,0 +1,172 @@
+/* Layout */
+.app-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #1a1a2e;
+  color: #eee;
+  padding: 1.5rem;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar h1 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #333;
+}
+
+.sidebar h2 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #888;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.sidebar a {
+  color: #aaa;
+  text-decoration: none;
+  display: block;
+  padding: 0.3rem 0;
+  font-size: 0.95rem;
+  transition: color 0.15s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  color: #fff;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar > ul > li {
+  margin-bottom: 1rem;
+}
+
+.sidebar .unit-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #ccc;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar ul ul {
+  padding-left: 1rem;
+}
+
+.sidebar ul ul li {
+  margin: 0.25rem 0;
+}
+
+/* Main content */
+.content {
+  padding: 2rem 3rem;
+  max-width: 900px;
+  background: #0f0f1a;
+}
+
+.content h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.content h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #ddd;
+}
+
+.content p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.content ul, .content ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.content li {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+/* Home page */
+.home .subtitle {
+  font-size: 1.2rem;
+  color: #999;
+  margin-bottom: 2rem;
+}
+
+.home section {
+  margin-bottom: 2.5rem;
+}
+
+/* Lesson page */
+.lesson .placeholder {
+  background: #1a1a2e;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  color: #888;
+}
+
+/* Exercises page */
+.exercises .unit-exercises {
+  margin-bottom: 2rem;
+}
+
+.exercises .unit-exercises h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.exercises ul {
+  list-style: none;
+  padding: 0;
+}
+
+.exercises li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #222;
+}
+
+.exercises .exercise-status {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.exercises .status-complete .exercise-status {
+  color: #4a9;
+}
+
+.exercises .status-in-progress .exercise-status {
+  color: #ea6;
+}
+
+.exercises .instructions {
+  background: #1a1a2e;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.exercises .instructions ol {
+  margin-bottom: 0;
+}
