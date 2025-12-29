@@ -1,9 +1,13 @@
 import { useParams } from 'react-router-dom';
 import { syllabus } from '../content/syllabus';
 import { Lesson_1_1_Syntax } from '../content/lessons/Lesson_1_1_Syntax';
+import { Lesson_1_2_Semantics } from '../content/lessons/Lesson_1_2_Semantics';
+import { Lesson_1_3_Entailment } from '../content/lessons/Lesson_1_3_Entailment';
 
 const lessonContent: Record<string, React.ComponentType> = {
   '1-1-syntax': Lesson_1_1_Syntax,
+  '1-2-semantics': Lesson_1_2_Semantics,
+  '1-3-entailment': Lesson_1_3_Entailment,
 };
 
 export function Lesson() {

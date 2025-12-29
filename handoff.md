@@ -104,9 +104,9 @@ Standard text, good balance of rigor and accessibility, weaves in computability 
 
 ## Current Status
 
-**Position:** Beginning of syllabus. Ready to start propositional logic.
+**Position:** Unit 1, completed 1.1 (Syntax) and 1.2 (Semantics). Ready for 1.3 (Semantic Entailment).
 
-**Next step:** Propositional logic as a formal system—syntax, semantics, proof techniques. Move quickly through what's review from boolean algebra, slow down for what's new.
+**Next step:** Semantic entailment (⊨), validity of arguments, satisfiability, connection to SAT.
 
 **Open threads to revisit later:**
 - The Gödel diagram we created (revisit after completing first-order logic + Peano axioms)
@@ -119,5 +119,5 @@ Standard text, good balance of rigor and accessibility, weaves in computability 
 | Date | Session | Notes |
 |------|---------|-------|
 | 2024-XX-XX | Initial conversation | Surveyed landscape, discussed Gödel preview, agreed to start from foundations. Set up repo structure. |
-
-*(Update with actual date when first real session begins)*
+| 2025-12-25 | 1.1 Syntax | Set up web app, covered syntax, exercises completed. |
+| 2025-12-28 | 1.2 Semantics | Truth assignments, material conditional (→ vs ↔), tautology/satisfiability distinction. Exercises completed. |

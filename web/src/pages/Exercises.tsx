@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { syllabus } from '../content/syllabus';
 
 // Track which exercise sets are available
-const availableExercises = new Set(['1-1-syntax']);
+const availableExercises = new Set(['1-1-syntax', '1-2-semantics', '1-3-entailment']);
 
 export function Exercises() {
   return (

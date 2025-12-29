@@ -3,8 +3,8 @@
 ## Current Position
 
 **Unit:** 1 — Propositional Logic
-**Topic:** 1.2 — Semantics (ready to start)
-**Status:** Completed 1.1, exercises done
+**Topic:** 1.3 — Semantic Entailment (ready to start)
+**Status:** Completed 1.1 and 1.2, exercises done
 
 ---
 
@@ -14,6 +14,7 @@
 |------|------------|----------|----------|-------|
 | — | 0.0 | Initial conversation | ~30 min | Surveyed syllabus, discussed Gödel preview, set up repo |
 | 2025-12-25 | 1.1 | Lesson + exercises | ~1 hr | Set up web app, covered syntax, did exercises, improved lesson materials based on session |
+| 2025-12-28 | 1.2 | Lesson + exercises | ~30 min | Covered semantics, truth assignments, material conditional. Good discussion on → vs ↔, and "order" of logics. |
 
 ---
 
@@ -22,6 +23,7 @@
 | Topic | Date Completed | Confidence | Review Due |
 |-------|----------------|------------|------------|
 | 1.1 Syntax | 2025-12-25 | 3 | 2026-01-01 |
+| 1.2 Semantics | 2025-12-28 | 3 | 2026-01-04 |
 
 **Confidence scale:** 1 = shaky, 2 = okay, 3 = solid, 4 = could teach it
 
@@ -37,6 +39,7 @@
 | Topic | Assigned | Attempted | Completed | Score/Notes |
 |-------|----------|-----------|-----------|-------------|
 | 1.1 Syntax | 2025-12-25 | 2025-12-25 | 2025-12-25 | 4 exercises, all understood. Good discussion on object/meta distinction. |
+| 1.2 Semantics | 2025-12-28 | 2025-12-28 | 2025-12-28 | 6 exercises covering truth assignments, classifications, equivalences, material conditional, and entailment preview. |
 
 ---
 
@@ -47,6 +50,7 @@ Topics due for review (based on spaced repetition):
 | Topic | Last Reviewed | Due Date | Priority |
 |-------|---------------|----------|----------|
 | 1.1 Syntax | 2025-12-25 | 2026-01-01 | Normal |
+| 1.2 Semantics | 2025-12-28 | 2026-01-04 | Normal |
 
 ---
 
@@ -77,3 +81,5 @@ Things that came up but were intentionally postponed:
 - Steven catches implicit assumptions — lesson materials improved based on feedback (explicit object/meta variable convention)
 - CS analogies (programming languages, currying) are effective bridges
 - Tangents into Gödel territory are productive but correctly deferred until foundations are in place
+- Good intuition check: asked if → is like =, which led to productive discussion of conditional vs biconditional
+- Framing → as "just !p || q" clicked well — building on boolean algebra foundation
